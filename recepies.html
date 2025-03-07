@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Recipes | Qureshies Banquet & Dining</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .recipe-section {
+            padding: 50px 0;
+        }
+        .recipe-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+        .recipe-card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Qureshies Banquet & Dining</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="recipes.html">Best Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Recipe Section -->
+    <section class="recipe-section container text-center">
+        <h1 class="mb-4">Top 20 Signature Recipes</h1>
+        <div class="row" id="recipeContainer"></div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Qureshies Banquet & Dining | All Rights Reserved</p>
+    </footer>
+    
+    <script>
+        const recipes = [
+            { name: "Mutton Karahi", img: "karahi.jpg", desc: "A traditional spicy and rich mutton dish cooked in a wok with tomatoes and green chilies." },
+            { name: "Chicken Malai Boti", img: "malai_boti.jpg", desc: "Juicy and tender boneless chicken marinated in a creamy mixture and grilled to perfection." },
+            { name: "Biryani Special", img: "biryani.jpg", desc: "Aromatic basmati rice cooked with flavorful spices and marinated meat, a royal treat." },
+            { name: "Seekh Kebabs", img: "seekh_kebab.jpg", desc: "Delicious minced meat skewers, grilled over charcoal for a smoky flavor." },
+            { name: "Peshawari Chapli Kebab", img: "chapli_kebab.jpg", desc: "A flat, spicy minced meat kebab infused with aromatic spices and herbs." },
+            { name: "Nihari", img: "nihari.jpg", desc: "Slow-cooked beef stew in rich, flavorful gravy, served with naan." },
+            { name: "Gola Kabab", img: "gola_kabab.jpg", desc: "Soft and succulent minced meat kebabs infused with a secret spice blend." },
+            { name: "Shahi Tukray", img: "shahi_tukray.jpg", desc: "A royal Mughlai dessert made of deep-fried bread soaked in saffron-infused milk." },
+            { name: "Falooda", img: "falooda.jpg", desc: "A refreshing dessert drink with rose syrup, vermicelli, basil seeds, and kulfi." },
+            { name: "Gajar Ka Halwa", img: "gajar_halwa.jpg", desc: "A classic winter dessert made with grated carrots, milk, ghee, and dry fruits." },
+            { name: "Mutton Paya", img: "paya.jpg", desc: "Slow-cooked trotters in a rich, spicy broth, best enjoyed with naan." },
+            { name: "Beef Haleem", img: "haleem.jpg", desc: "A thick, flavorful stew made with lentils, wheat, and slow-cooked beef." },
+            { name: "Daal Makhni", img: "daal_makhni.jpg", desc: "A creamy lentil dish cooked with butter and aromatic spices." },
+            { name: "Chicken Jalfrezi", img: "jalfrezi.jpg", desc: "A spicy stir-fried chicken dish with bell peppers and onions." },
+            { name: "Pulao", img: "pulao.jpg", desc: "A fragrant rice dish cooked with mild spices and tender meat." },
+            { name: "Lassi", img: "lassi.jpg", desc: "A traditional yogurt-based drink, sweet or salty, served chilled." },
+            { name: "Sheer Khurma", img: "sheer_khurma.jpg", desc: "A delicious vermicelli and milk dessert, rich with nuts and dates." },
+            { name: "Kheer", img: "kheer.jpg", desc: "A creamy rice pudding cooked with milk, sugar, and cardamom." },
+            { name: "Ras Malai", img: "ras_malai.jpg", desc: "Soft cheese balls soaked in saffron-flavored sweet milk." }
+        ];
+        
+        const recipeContainer = document.getElementById("recipeContainer");
+        recipeContainer.innerHTML = recipes.map(recipe => `
+            <div class="col-md-4 mb-4">
+                <div class="card recipe-card">
+                    <img src="${recipe.img}" class="card-img-top" alt="${recipe.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${recipe.name}</h5>
+                        <p class="card-text">${recipe.desc}</p>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    </script>
+</body>
+</html>

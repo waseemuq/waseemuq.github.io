@@ -4,286 +4,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two Column Page</title>
-    <link rel="icon" type="image/x-icon" href="sig.jpg">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            height: auto;
-            padding: 0px;
-        }
-
-        .left-column {
-            width: 25%;
-            padding: 12px;
-            background-color: #212a47;
-            text-align: center;
-            position: fixed;
-            height: 100%;
-            overflow-y: auto;
-            color: beige;
-        }
-
-        .left-column img {
-            width: 50%;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        .right-column {
-            width: 75%;
-            padding: 20px;
-            padding-left: 40px;
-            padding-right: 10%;
-            margin-left: 25%;
-            margin-bottom: 20px;
-
-        }
-
-        .contact-info {
-            text-align: left;
-            font-size: 12px;
-        }
-
-        .right-column h2 {
-            margin-bottom: 10px;
-            margin-right: 5%;
-            position: relative;
-        }
-
-        .right-column ul {
-            margin-left: 20px;
-        }
-
-        p {
-            font-size: 14px;
-        }
-
-        h4 {
-            color: #ff5722;
-        }
-
-        ul {
-            font-size: 14px;
-            line-height: 18px;
-        }
-
-        h3 {
-            letter-spacing: 3px;
-        }
-    </style>
+    <title>Qureshees Banquet & Dining</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="left-column">
-        <img src="images\Picture3.jpg" alt="Profile Image">
-        <div class="contact-info">
-            <p><strong>Contact:</strong> </p>
-            <hr><br>
-
-            <p>Phone: +92 322 8555 705</p>
-            <p>Email: major.waseem@gmail.com</p>
-            <p><a style="color: aliceblue;" href="mailto:major.waseem@gmail.com">Send email</a></p>
-
-            <br>
-
-            <p><strong>Education:</strong> </p>
-            <hr>
-            <br>
-
-            <p>Pakistan Military Academy Kakul</p>
-            <br>
-
-            <p><strong>IT Courses:</strong> </p>
-            <hr><br>
-            <p>Oracle</p>
-            <p>Java</p>
-            <p>Visual Basic </p>
-            <br>
-
-            <p><strong>Languages:</strong> </p>
-            <hr><br>
-            <p>Urdu</p>
-            <p>English</p>
-            <p>Punjabi</p>
-            <p>Arabic</p>
-            <br>
-
-
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Qureshees Banquet & Dining</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menus.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="book-a-table.html">Book a Table</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="recepies.html">Recipes</a></li>
+                            <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+                            <li><a class="dropdown-item" href="ourTeam.html">Our Team</a></li>
+                            <li><a class="dropdown-item" href="location.html">Location</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="right-column">
-        <h1><strong>Major Waseem Qureshi (r):</strong> </h1>
-        <h3 style="letter-spacing: 5px;">Front-End Web Developer</h3>
-        <br><br>
+    </nav>
 
-        <p>An ex-army officer with over 23 years of professional experience in army
-            and more than 12 years of employment
-            experience on specialized security related tasks providing security cover to highly sensitive
-            organizations
-            of national importance and high value assets and VIPs during move. Capable of installing technical
-            security
-            equipment in sizable facilities and on ground implementation of security procedure and policies
-            vis-a-vis
-            threat assessment.</p> <br>
-        <hr><br>
+    <!-- Hero Section -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1>Welcome to Qureshees Banquet & Dining</h1>
+            <p class="lead">Experience the best dining in town</p>
+            <a href="book-a-table.html" class="btn btn-primary">Book a Table</a>
+        </div>
+    </header>
 
-        <h3> Core Competencies</h3>
-        <p>
-        <ul>
-            <li>Formulation of security plan</li>
-            <li>Deployment of field tentacles</li>
-            <li>Liaison with concerned agencies</li>
-            <li>Monitoring of deployed mechanis</li>
-            <li>Deployment of security gadgets</li>
-            <li>Protection of high value targets</li>
-            <li>Evaluation of security measures</li>
-            <li>Training of security staff</li>
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images\food1.jpg" class="card-img-top" alt="Dish">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Signature Dish</h5>
+                            <p class="card-text">Delicious and fresh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images\food2.jpg" class="card-img-top" alt="Dish">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Special Curry</h5>
+                            <p class="card-text">Aromatic and flavorful.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Images\food3.jpg" class="card-img-top" alt="Dish">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Grilled Meat</h5>
+                            <p class="card-text">Perfectly seasoned and grilled.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </ul>
-        </p>
-        <br>
-        <hr><br>
+    <section id="menu" class="container">
+        <h2>Our Special Dishes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images\dish2.jpg" class="card-img-top" alt="Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta Alfredo</h5>
+                        <p class="card-text">Creamy Alfredo pasta topped with parmesan and herbs.</p>
+                    </div>
+                </div>
+            </div>
 
-        <h3>Significant Contributions</h3>
-        <ul>
-            <li>Conduct of Design Basis Threat evaluation</li>
-            <li>Safeguarding highly sensitive installations of national level by:</li>
-            <li>On ground deployment of security personnel</li>
-            <li>Handling the installation, operation, and maintenance of security equipment</li>
-            <li>Provision of technical support</li>
-            <li>Profiling of surrounding areas</li>
-            <li>Employee profiling</li>
-            <li>Administrative management of security personnel, including relief/ rotation planning</li>
-            <li>Planning and Provision of security cover for:</li>
-            <ul>
-                <li>Foreign delegations</li>
-                <li>High-level officials</li>
-                <li>Move of sensitive material to remote locations</li>
-                <li>High-value assets</li>
-                <li>Security of VIPs</li>
-                <li>Security of high-value installations</li>
-            </ul>
-        </ul>
-        <br>
-        <hr><br>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images\dish3.jpg" class="card-img-top" alt="Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tandoori Platter</h5>
+                        <p class="card-text">A perfect mix of tandoori chicken, kebabs, and naan.</p>
+                    </div>
+                </div>
+            </div>
+            <hr><br>
+            <!-- Three New Cards -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images\dish4.jpg" class="card-img-top" alt="Dish 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sizzling Steak</h5>
+                        <p class="card-text">Tender steak grilled to perfection, served with mashed potatoes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images\dish5.jpg" class="card-img-top" alt="Dish 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Seafood Platter</h5>
+                        <p class="card-text">A delightful combination of prawns, fish, and calamari.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Images\dish6.jpg" class="card-img-top" alt="Dish 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Lava Cake</h5>
+                        <p class="card-text">Rich, warm chocolate cake with a gooey center.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Work Experience</h3> <br>
-        <h4>Security Manager | Pakistan Atomic Energy Commission (2022 - 2023)</h4>
+    <!-- Quick Links Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Explore More</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Order Online</h5>
+                            <p class="card-text">Get your favorite dishes delivered to your doorstep.</p>
+                            <a href="order-online.html" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Recipes</h5>
+                            <p class="card-text">Discover our special recipes and cooking techniques.</p>
+                            <a href="recepies.html" class="btn btn-primary">View Recipes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Reviews</h5>
+                            <p class="card-text">See what our customers say about us.</p>
+                            <a href="reviews.html" class="btn btn-primary">Read Reviews</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <ul>
-            <li>Deployment of security equipment throughout the facility.</li>
-            <li>Independently managed a sizable security company to protect men and materials on-site.
-            </li>
+    <!-- Location and Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Find Us</h2>
+                    <p>Visit our restaurant or check our location.</p>
+                    <a href="location.html" class="btn btn-primary mb-3">View Location</a>
+                </div>
+                <div class="col-md-6">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions? Contact us or meet our team.</p>
+                    <a href="contactUs.html" class="btn btn-primary mb-2">Contact Us</a>
+                    <a href="ourTeam.html" class="btn btn-outline-primary mb-2 ms-2">Meet Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </ul>
-        <br>
-        <hr><br>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Qureshees Banquet & Dining | All Rights Reserved</p>
+    </footer>
 
-
-        <h4>Instructor and Technical Officer | Security Training Facility (2021-2022) </h4>
-        <ul>
-            <li>Conducted various courses on deployment of technical security equipment, CCTV Systems, Cyber
-                security Awareness and threat assessment.</li>
-            <li>Deployment of wireless and landline communication for security infrastructure.</li>
-            <li>Management of the installation, maintenance, and repair of CCTV systems.</li>
-        </ul>
-
-
-        <br>
-        <hr><br>
-        <h4>Instructor Technical | Security Training Facility (2021–2022)</h4>
-        <ul>
-            <li> Conducted various courses on deployment of technical security equipment, CCTV Systems, Cyber
-                security Awareness and threat assessment. </li>
-            <li> Deployment of wireless and landline communication for security infrastructure. </li>
-            <li> Management, instalation and maintenance of CCTV systems. </li>
-        </ul>
-        <br>
-        <hr><br>
-        <h4> Staff Officer | Khan Research Laboratories (2012 - 2017) </h4>
-        <ul>
-            <li>Coordinated and managed security arrangements effectively at HQ level.</li>
-        </ul>
-
-        <br>
-        <hr><br>
-        <h4>Procurement Officer | Northern Area Scouts</h4>
-
-        <ul>
-            <li>Managed procurement for projects exceeding PKR 350 Million, ensuring compliance with PPRA regulations.
-            </li>
-            <li>Handled vendor management, including sourcing, tender publications, contract negotiations, and
-                preparation of CSTs.</li>
-            <li>Expertise in quality assurance, cost reduction strategies, and risk management.</li>
-        </ul>
-        <br>
-        <hr><br>
-        <h4>Mess Secretary | Various Locations</h4>
-        <ul>
-            <li>Managed and maintained mess facilities and dining arrangements for mess members.</li>
-            <li>Organized Corps-level functions, including dinning arrangements for high-level foreign delegations.</li>
-            <li>Supervised the administration of guest rooms, ensuring quality service for General Officers Quarters.
-            </li>
-        </ul>
-        <br>
-        <hr><br>
-
-
-        <h4>Intelligence Officer | ISI / SPD</h4>
-
-        <ul>
-            <li> technical intelligence tasks, including interception, surveillance, and traffic analysis.</li>
-            <li>Provided intelligence support to AQ Khan Research Laboratories.</li>
-        </ul>
-        <br>
-        <hr><br>
-        <h4>Project Management | ISI / SPD </h4>
-        <ul>
-            <li> Managed and deployed a workforce of over 200 personnel.
-            <li> Bridged management-employee relations, addressing demands, grievances, and disciplinary matters.</li>
-            <li> Maintained a positive and disciplined working environment.</li>
-            <li>Supervised the execution of construction projects, including barracks, boundary walls, watch towers,
-                mosques, and mess renovations.</li>
-            <li>Oversaw various technical projects, including high-end cyber labs, technical equipment courses, cyber
-                awareness training, and CCTV installations.</li>
-            <li>Led community outreach projects.</li>
-        </ul>
-        <br>
-        <hr><br>
-        <h3>Qualifications & Courses </h3>
-        <ul>
-            <li>Force-on-Force for Managers – National Nuclear Security Administration, USA</li>
-            <li>Conflict and Tactical Simulation Course – National Nuclear Security Administration, USA</li>
-            <li>National Training Course on Conducting Computer Security Assessments – International Atomic Energy
-                Agency</li>
-            <li> Workshop on Threat Assessment and Design Basis Threat – International Atomic Energy Agency</li>
-            <li>Attended various professional courses related to intelligence, communication, and technical equipment in
-                the Pakistan Army.</li>
-        </ul>
-        <br>
-        <hr><br>
-        <h3><strong>Refrences: </strong> </h4>
-            <br>
-            <p>
-
-            <ul>
-                <li>Waseem Ahmad – <i>Chief Technical Officer, Pak Datacom </i></p>
-                <li>Syed Muhammad Tahir – <i>Senior Executive Manager Security, Sanofi Aventis, Pakistan Limited </i>
-                    </p>
-                <li>Fraz Ahmed Abbasi – <i>National Sales Manager, Fauji Foods Limited </i></p>
-            </ul>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

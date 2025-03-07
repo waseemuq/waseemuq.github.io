@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | Qureshies Banquet & Dining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Navbar Styling */
+        
+        *{
+            
+        }
+        .navbar {
+            background-color: #171718;
+        }
+
+        /* Hero Section Styling */
+        header {
+            background: url('hero-bg.jpg') center/cover no-repeat;
+            padding: 30px 0;
+            color: rgb(206, 198, 198);
+        }
+        /* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #040108, #838587);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #fff !important;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #ffde59 !important;
+}
+
+
+        /* Footer Styling */
+        footer {
+            background: #27292b;
+            color: white;
+            padding: 20px;
+        }
+        header {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    padding: 60px 0;
+    </style>
+</head>
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Qureshees Banquet & Dining</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservations">Reservations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    
+
+    <!-- Hero Section -->
+    <header class="text-center">
+        <div class="container">
+            <h1>Reserve Your Table</h1>
+            <p>Experience fine dining at Qureshies Banquet & Dining</p>
+        </div>
+    </header>
+
+    <!-- Reservation Form -->
+    <section class="container mt-5 mb-5">
+        <h2 class="text-center">Fill out the form below to reserve your spot</h2>
+        <p class="text-center" style="font-size: larger;">we will be glad to welcome you.</p>
+        <div id="successMessage" class="alert alert-success d-none text-center">Reservation saved successfully!</div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="reservationForm">
+                    <input type="hidden" id="editIndex">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="time" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="time" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="guests" class="form-label">Number of Guests</label>
+                        <select class="form-select" id="guests" required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6+ People</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="requests" class="form-label">Special Requests (Optional)</label>
+                        <textarea class="form-control" id="requests" rows="3"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Display Bookings -->
+    <section class="container mt-5">
+        <h2 class="text-center">Your Reservations</h2>
+        <ul id="reservationsList" class="list-group"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 Qureshies Banquet & Dining | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById("date").setAttribute("min", new Date().toISOString().split("T")[0]);
+
+        document.getElementById("reservationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let index = document.getElementById("editIndex").value;
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let date = document.getElementById("date").value;
+            let time = document.getElementById("time").value;
+            let guests = document.getElementById("guests").value;
+            let requests = document.getElementById("requests").value || "No special requests.";
+            
+            let reservation = { name, email, phone, date, time, guests, requests };
+            let reservations = JSON.parse(localStorage.getItem("reservations")) || [];
+            
+            if (index === "") {
+                reservations.push(reservation);
+            } else {
+                reservations[index] = reservation;
+                document.getElementById("editIndex").value = "";
+            }
+            
+            localStorage.setItem("reservations", JSON.stringify(reservations));
+            document.getElementById("successMessage").classList.remove("d-none");
+            setTimeout(() => document.getElementById("successMessage").classList.add("d-none"), 3000);
+            displayReservations();
+            document.getElementById("reservationForm").reset();
+        });
+
+        document.addEventListener("DOMContentLoaded", displayReservations);
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f9f6f2;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #5c5b5d, #7f8288);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+}
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #fff !important;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #ffde59 !important;
+}
+
+/* Hero Section */
+header {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+header .btn {
+    font-size: 1.3rem;
+    padding: 0.75rem 2rem;
+    margin-top: 1rem;
+    background: #ff4081;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    transition: background 0.3s;
+}
+header .btn:hover {
+    background: #f50057;
+}
+
+/* Menu Section */
+section#menu {
+    background: #fff;
+    padding: 4rem 0;
+}
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6a11cb;
+    margin-bottom: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.card-body {
+    background: #e3f2fd;
+    padding: 1.5rem;
+    text-align: center;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d47a1;
+    font-family: 'Dancing Script', cursive;
+}
+.card-text {
+    color: #37474f;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
