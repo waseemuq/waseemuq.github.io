@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-check-input:checked+.form-check-label {
+    background: #ff5f6d;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    align-items: flex-start;
+}
+
+h2 {
+    color: #ff5f6d;
+    font-weight: bold;
+}
+
+/* Quiz Container */
+#quiz-container {
+    background: #fff3e0;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Question Text */
+#question-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Options Styling */
+.form-check-label {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s;
+}
+
+.form-check-input:checked+.form-check-label {
+    background: #ff5f6d;
+    color: white;
+    font-weight: bold;
+
+}
+
+.form-check-input {
+    margin-top: 1em !important;
+
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ff3e55, #ff9a8b);
+    transform: scale(1.05);
+}
+
+/* Result Container */
+#result-container {
+    background: #d4edda;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #155724;
+}

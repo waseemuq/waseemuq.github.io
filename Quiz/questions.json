@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Tech Modern Language",
+      "Hyper Transfer Markup Language",
+      "Hyperlink and Text Management Language"
+    ],
+    "correct": "Hyper Text Markup Language"
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Sheets",
+      "Creative Style System",
+      "Coded Style Structure"
+    ],
+    "correct": "Cascading Style Sheets"
+  },
+  {
+    "question": "Which language is used for web development?",
+    "options": [
+      "JavaScript",
+      "Python",
+      "C++",
+      "Java"
+    ],
+    "correct": "JavaScript"
+  },
+  {
+    "question": "Which tag is used to define an image in HTML?",
+    "options": [
+      "img",
+      "image",
+      "picture",
+      "photo"
+    ],
+    "correct": "img"
+  },
+  {
+    "question": "Which CSS property controls text size?",
+    "options": [
+      "font-size",
+      "text-size",
+      "font-style",
+      "text-style"
+    ],
+    "correct": "font-size"
+  },
+  {
+    "question": "Which is a JavaScript framework?",
+    "options": [
+      "React",
+      "Django",
+      "Flask",
+      "Laravel"
+    ],
+    "correct": "React"
+  },
+  {
+    "question": "Which attribute is used to specify a unique identifier in HTML?",
+    "options": [
+      "id",
+      "class",
+      "name",
+      "key"
+    ],
+    "correct": "id"
+  },
+  {
+    "question": "Which HTML element is used to specify a footer for a document?",
+    "options": [
+      "<footer>",
+      "<bottom>",
+      "<section>",
+      "<end>"
+    ],
+    "correct": "<footer>"
+  },
+  {
+    "question": "What is the purpose of Bootstrap?",
+    "options": [
+      "To create responsive web designs",
+      "To manage databases",
+      "To build server-side applications",
+      "To write Java code"
+    ],
+    "correct": "To create responsive web designs"
+  },
+  {
+    "question": "What is your name",
+    "options": [
+      "Sabih",
+      "Javadcript",
+      "Qureshi",
+      "ABCD"
+    ],
+    "correct": "Sabih"
+  }
+]
